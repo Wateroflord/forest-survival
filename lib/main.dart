@@ -12,7 +12,7 @@ import 'content.dart';
 import 'ui.dart';
 import 'package:winter_core/winter_core.dart';
 
-void main() => runWinterApp(repo: 'forest-survival', appName: 'Выживание в лесу', body: _main);
+Future<void> main() => runWinterApp(repo: 'forest-survival', appName: 'Выживание в лесу', body: _main);
 
 void _main() {
   WidgetsFlutterBinding.ensureInitialized();
