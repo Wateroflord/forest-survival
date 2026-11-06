@@ -10,10 +10,13 @@ import 'package:url_launcher/url_launcher.dart';
 
 import 'content.dart';
 import 'ui.dart';
+import 'package:winter_core/winter_core.dart';
 
-void main() {
+void main() => runWinterApp(repo: 'forest-survival', appName: 'Выживание в лесу', body: _main);
+
+void _main() {
   WidgetsFlutterBinding.ensureInitialized();
-  runApp(const ForestApp());
+  runApp(WinterCrashBanner(child: const ForestApp()));
 }
 
 const _green = Color(0xFF6ED28C);
